@@ -14,7 +14,7 @@
             color: #333;
         }
         h1, h2 {
-            color: #1a73e8; /* Un color similar al de Google */
+            color: #1a73e8;
         }
         .date {
             font-style: italic;
@@ -24,41 +24,54 @@
         }
         .highlight {
             font-weight: bold;
-            color: #d93025; /* Color de advertencia o énfasis */
+            color: #d93025;
         }
     </style>
 </head>
 <body>
 
-    <h1>Política de Privacidad de Food Additives</h1>
-    
-    <p class="date">Fecha de entrada en vigor: 9 de Diciembre de 2025</p>
+    <h1>Política de Privacidad de Vegan Scan</h1>
+
+    <p class="date">Fecha de entrada en vigor: 17 de junio de 2026</p>
 
     <h2>1. Introducción</h2>
-    <p>Esta Política de Privacidad rige el uso de la aplicación móvil <span class="highlight">Vegan Scan</span> (la "Aplicación"), proporcionada por Iván Cózar. Nos comprometemos a proteger su privacidad. </p>
+    <p>Esta Política de Privacidad rige el uso de la aplicación móvil <span class="highlight">Vegan Scan</span> (la "Aplicación"), proporcionada por Iván Cózar. Nos comprometemos a proteger su privacidad.</p>
 
     <h2>2. Recopilación de Información</h2>
-    <p>La Aplicación <span class="highlight">**no recopila, no utiliza, ni transmite a terceros ningún dato personal o sensible del usuario.**</span></p>
-    <p>La Aplicación no solicita ni requiere acceso a información de identificación personal, como su nombre, dirección, número de teléfono o correo electrónico.</p>
-    
-    <h2>3. Datos No Recopilados</h2>
+    <p>La Aplicación <span class="highlight">no recopila, no utiliza, ni transmite a terceros ningún dato personal o sensible del usuario.</span></p>
+    <p>La Aplicación no solicita ni requiere información de identificación personal, como su nombre, dirección, número de teléfono o correo electrónico.</p>
+
+    <h2>3. Uso de la Cámara y Galería</h2>
+    <p>La funcionalidad de análisis de productos requiere acceso a la <strong>cámara</strong> o a la <strong>galería de fotos</strong> del dispositivo para capturar la lista de ingredientes de un producto.</p>
+    <p><span class="highlight">Las imágenes capturadas o seleccionadas nunca salen del dispositivo.</span> El análisis se realiza íntegramente de forma local mediante la librería ML Kit Text Recognition de Google, que procesa el texto directamente en el dispositivo sin enviar la imagen ni ningún dato derivado a servidores externos.</p>
+    <p>La Aplicación no almacena, no guarda ni conserva las imágenes analizadas en ningún momento.</p>
+
+    <h2>4. Datos No Recopilados</h2>
     <p>La Aplicación está diseñada para funcionar sin recopilar:</p>
     <ul>
         <li>Información de identificación personal (IIP).</li>
         <li>Datos de ubicación geográfica.</li>
-        <li>Datos de la cámara o micrófono.</li>
-        <li>Datos de contactos o galerías de fotos.</li>
+        <li>Imágenes o fotografías del usuario (no se almacenan).</li>
+        <li>Datos de contactos.</li>
         <li>Identificadores de dispositivo o de publicidad con fines de seguimiento.</li>
     </ul>
 
-    <h2>4. Uso de Librerías y Servicios de Terceros</h2>
-    <p>La Aplicación utiliza librerías de componentes estándar de Android y Kotlin (como las librerías de AndroidX, Material Design o corrutinas) únicamente para su funcionamiento interno. **Estas librerías se utilizan de manera que no se envían datos fuera de su dispositivo.**</p>
-    <p>La Aplicación <span class="highlight">**no contiene publicidad de terceros ni herramientas de análisis que recopilen datos**</span> del usuario.</p>
+    <h2>5. Uso de Librerías y Servicios de Terceros</h2>
+    <p>La Aplicación utiliza las siguientes librerías:</p>
+    <ul>
+        <li><strong>AndroidX, Material Design, Kotlin Coroutines:</strong> componentes estándar de Android para la interfaz y el funcionamiento interno. No envían datos fuera del dispositivo.</li>
+        <li><strong>ML Kit Text Recognition (Google):</strong> librería de reconocimiento óptico de caracteres (OCR) que opera completamente en el dispositivo. No transmite imágenes ni texto a servidores de Google ni de terceros.</li>
+        <li><strong>Gson:</strong> librería de serialización de datos utilizada para almacenar localmente la lista de aditivos en el dispositivo.</li>
+    </ul>
+    <p>La Aplicación <span class="highlight">no contiene publicidad de terceros ni herramientas de análisis que recopilen datos</span> del usuario.</p>
 
-    <h2>5. Cambios en la Política</h2>
+    <h2>6. Descarga de datos de aditivos</h2>
+    <p>Al iniciarse por primera vez, la Aplicación realiza una única conexión a un servidor propio para descargar la lista de aditivos alimentarios. Esta conexión no transmite ningún dato personal del usuario; únicamente descarga información pública sobre aditivos. Los datos se almacenan localmente en el dispositivo y no se vuelven a descargar salvo que el usuario reinstale la aplicación.</p>
+
+    <h2>7. Cambios en la Política</h2>
     <p>Podemos actualizar nuestra Política de Privacidad ocasionalmente. Le notificaremos cualquier cambio publicando la nueva Política de Privacidad en esta página.</p>
 
-    <h2>6. Contacto</h2>
+    <h2>8. Contacto</h2>
     <p>Si tiene alguna pregunta o sugerencia sobre nuestra Política de Privacidad, no dude en ponerse en contacto con nosotros en:</p>
     <p>Correo electrónico: <span class="highlight">ivan.cozar.laguna@gmail.com</span></p>
 
